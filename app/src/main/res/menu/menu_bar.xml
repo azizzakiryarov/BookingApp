@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/about_us"
+        android:title="About us"
+        app:actionLayout="@layout/switch_item" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:actionLayout="@layout/switch_item" />
+    <item
+        android:id="@+id/contacts"
+        android:title="Contacts"
+        app:actionLayout="@layout/switch_item" />
+
+</menu>

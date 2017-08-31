@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/work_table_app"
+    tools:context="se.groupfish.azizzakiryarov.newapp.WorkTableAppActivity">
+
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="27dp"
+        android:contentDescription="Bookning"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/calendar"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        android:text="Bookning"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

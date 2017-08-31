@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contacts_background"
+    tools:context="se.groupfish.azizzakiryarov.newapp.AboutUsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Whether you’re building your own website or are just browsing for information on a business, organization, or individual, the ‘About Us’ page is a vital part of every website and blog. Why? Because it’s usually one of the first destinations visitors will click when arriving to a site.
+
+
+ If they aren’t impressed, you can expect them to leave without reading your awesome content, signing up for your newsletter or making a purchase on your e-commerce site.
+
+
+ But, what makes a solid ‘About Us’ page’?
+
+
+ For starters, it should be informative. It doesn’t always have to tell the whole story, but it should at least provide people with an idea of who and what you are. Besides that, it should contain social proof, testimonials, and some personal information that viewers can relate to such as education, family, etc. It also wouldn’t hurt to make sure that it’s also responsive, since more people are surfing online on mobile devices.
+
+ That may sound complicated, but it’s really not. The main purpose of the ‘About Us’ page is to give visitors a glimpse into the identity of either a person or business. If you know who you are and your goal for your site, the ‘About Us’ page should come naturally. But, if you’re still looking for inspiration, you can always check out the following Top 25 ‘About Us’ pages."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/work_table_app"
+    tools:context="se.groupfish.azizzakiryarov.newapp.BookingAppActivity">
+
+    <TextView
+        android:id="@+id/page_title"
+        style="@style/AlertDialog.AppCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Here you can choose your date and time for bookning"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:onClick="onClick"
+        android:text="Click me to choose date"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvDate"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginTop="12dp"
+        android:onClick="onClick"
+        android:text="Click me to choose time"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edit_firstName_and_lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_saveAndSend"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="@string/firstname_lastname"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+    <EditText
+        android:id="@+id/edit_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_list"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="info@hotmail.com"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+    <EditText
+        android:id="@+id/edit_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:hint="Tel:0708211183"
+        android:inputType="phone"
+        android:textColorHint="@color/common_google_signin_btn_text_light" />
+
+    <Button
+        android:id="@+id/btn_saveAndSend"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_list"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:text=" Save booking" />
+
+
+    <Button
+        android:id="@+id/btn_list"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_delete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:text="booking's list" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_saveAndSend"
+        android:text="Delete booking" />
+
+
+</RelativeLayout>

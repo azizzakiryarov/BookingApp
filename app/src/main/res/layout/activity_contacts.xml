@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/work_table_app"
+    tools:context="se.groupfish.azizzakiryarov.newapp.ContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="383dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:layout_width="383dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitStart"
+            android:src="@drawable/contacts_blue_glow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="23dp"
+        android:text="# Aziz Zakiryarov"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@android:color/holo_green_dark" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="13dp"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:text="# tel.:0708211183"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="14dp"
+        android:autoLink="email"
+        android:linksClickable="true"
+        android:text="# email: zakiryarov@hotmail.com"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginBottom="14dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="# www.linkedin.com/in/aziz-zakiryarov-a30606124/"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+    <ImageButton
+        android:id="@+id/map"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="41dp"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/map"
+        android:text="My location"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+</RelativeLayout>
